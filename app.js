@@ -42,7 +42,7 @@ app.get('/api/rates', async (req, res) => {
     });
   } catch (error){
     return res
-      .status(500)
+      .status(400)
       .json({
         status: "fail",
         error: error.message
